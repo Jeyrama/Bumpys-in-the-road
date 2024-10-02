@@ -26,3 +26,16 @@ const bump = x => {
 }
 
 // or
+
+function bump(x){
+  let count = 0
+for (const i of x) {
+  if (i === 'n') {
+    count++
+  } 
+}
+  if (count > 15) {
+    return "Car Dead"
+  }
+  return "Woohoo!"
+}
